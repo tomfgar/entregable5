@@ -1,0 +1,558 @@
+.card{
+    width: 100%;
+    max-width: 25em;
+    border: 0.5em solid hsl(0, 0%, 80%);
+    border-radius: 1em;
+    font-size: 0.8rem;
+    transition: transform 150ms ease;
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+
+.background_color{
+    color:#e3f51c;
+}
+
+.welcome_title {
+    font-size: 24px; /* Tamaño de fuente */
+    font-weight: bold; /* Peso de la fuente */
+    font-family: inherit;
+    color: #333; /* Color del texto */
+    margin-bottom: 20px; /* Margen inferior para separarlo de otros elementos */
+}
+
+.welcome_title {
+    animation-name: slideIn; /* Nombre de la animación */
+    animation-duration: 1s; /* Duración de la animación */
+    animation-timing-function: ease; /* Función de temporización de la animación */
+}
+
+/* Definición de la animación */
+@keyframes slideIn {
+    from {
+        transform: translateY(-100px); /* Posición inicial */
+        opacity: 0; /* Opacidad inicial */
+    }
+    to {
+        transform: translateY(0); /* Posición final */
+        opacity: 1; /* Opacidad final */
+    }
+}
+
+
+/* Estilos para el modo claro */
+.light-mode .welcome_title {
+    color: #333; /* Color del texto en modo claro */
+}
+
+/* Estilos para el modo oscuro */
+.dark-mode .welcome_title {
+    color: #fff; /* Color del texto en modo oscuro */
+}
+
+.pokeCard{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    margin-top: 10px;
+}
+  
+  
+
+.trainee_name{
+    color: rgb(254, 25, 54, 1);
+}
+
+.select {
+    float: right;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    background-color: #fff;
+    background-image: linear-gradient(to bottom, #f9f9f9, #e9e9e9);
+    color: #333;
+    margin: 0 auto;
+    outline: none; /* Elimina el borde al enfocar */
+    display: flex;
+    align-items: center; /* Para centrar verticalmente los elementos */
+    
+}
+  
+select:hover {
+    border-color: #aaa;
+}
+  
+select:focus {
+    border-color: #4d90fe; /* Cambia el color del borde al enfocar */
+}
+  
+option {
+    padding: 10px;
+    font-size: 16px;
+    margin-left:  auto;
+}
+  
+option:hover {
+    background-color: #f0f0f0; /* Cambia el color de fondo al pasar el ratón */
+}
+  
+option:checked {
+    background-color: #e6e6e6; /* Cambia el color de fondo de la opción seleccionada */
+}
+  
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px; /* Establecer una altura mínima */
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+.search_form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Agrega espacio entre el formulario y el botón */
+}
+  
+.search_input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 45%;
+}
+  
+.search_button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+}
+
+.search_button:hover {
+    background-color: #ff0000;
+}
+
+.retry-button {
+    display: block;
+    padding: 12px 24px; /* Espaciado interno */
+    background-color: #007bff; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Borde redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de fuente */
+    margin-top: 32px; /* Margen superior */
+    display: block; /* Hacer que el botón sea un bloque */
+    margin-left: auto; /* Centrar horizontalmente */
+    margin-right: auto; /* Centrar horizontalmente */
+  }
+  
+  .retry-button:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor sobre el botón */
+  }
+  
+  
+  .retry-button:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor sobre el botón */
+  }
+  
+
+  .error-box {
+  display: block;  
+  background-color: #7d3c3c; /* Color de fondo */
+  color: #e3f51c; /* Color del texto */
+  padding: 24px; /* Espaciado interno */
+  border-radius: 8px; /* Borde redondeado */
+  margin-top: 32px; /* Margen superior */
+  font-size: 32px; /* Tamaño de fuente */
+  }
+  
+.retry-button {
+  padding: 12px 24px; /* Espaciado interno */
+  background-color: #ff0000; /* Color de fondo */
+  color: #ffffff; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 8px; /* Borde redondeado */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  font-size: 16px; /* Tamaño de fuente */
+  margin-top: 32px; /* Margen superior */
+  display: block; /* Hacer que el botón sea un bloque */
+  margin-left: auto; /* Centrar horizontalmente */
+  margin-right: auto; /* Centrar horizontalmente */
+}
+
+.retry-button:hover {
+  background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor sobre el botón */
+}
+  
+  /* Estilos para el contenedor del selector */
+  .select-wrapper {
+    float: right; /* Colocar el selector a la derecha */
+    margin-top: 16px;
+    margin-left: 16px; /* Agregar margen izquierdo para separar del botón */
+    align-items: center;
+}
+
+/* Estilos para la etiqueta del selector */
+.select-label {
+    margin-right: 8px;
+}
+
+/* Estilos para el selector */
+.select-input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin-bottom: 0; /* Eliminar el margen inferior */
+    margin-left: 8px; /* Agregar margen izquierdo para separar del botón */
+}
+
+/* Estilos para el modo claro */
+.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Estilos para el modo oscuro */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.toggle-button {
+    margin-top: 20px;
+    background-color: #ffffff; /* Color de fondo del botón */
+    border: 1px;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;  /* Esto centra el botón horizontalmente */
+}
+
+.light-mode .toggle-button {
+    background-color: black;
+    color: white;
+}
+  
+.dark-mode .toggle-button {
+    background-color: white;
+    color: black;
+}
+
+.main_header {
+    background-image: url('/public/pokemonlogo.jpg');
+    background-size: contain;
+    background-position: top; /* Ajusta la posición de la imagen en la parte superior */
+    height: 200px; 
+}  
+
+.main_footer{
+    background-image: url('/public/pokedexheaderfooter.png');
+    background-size: cover;
+    background-position: bottom; /* Ajusta la posición de la imagen en la parte superior */
+    height: 200px; 
+}
+
+.header_card{
+    background-color: blueviolet;
+    aspect-ratio: 2;
+    width: 100%;
+    position: relative;
+    border-radius: 0.4em;
+}
+
+.img_card{
+    position: absolute;
+    width: 55%;
+    top: 2em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.principal_card{
+    margin-top: 3.5em;
+}
+
+.name_card{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: 0.2em;
+}
+
+.types_card{
+    --gap-types: 0.7em;
+    display: flex;
+    justify-content: center;
+    gap: var(--gap-types);
+}
+
+.type_card:not(:nth-child(1))::before{
+    content: '/';
+    padding-right: var(--gap-types);
+}
+
+.hr_card{
+    --margin-y: 0.8em;
+    margin-top: var(--margin-y);
+    margin-bottom: var(--margin-y);
+    border-top: 1px solid #ccc5;
+    margin-inline: 2em;
+}
+
+.stats_card{
+    padding: 1em 1em 2em;
+}
+
+.list_card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1.5em;
+}
+
+.stat_card{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    align-items: center;
+}
+
+.stat_label_card{
+    font-size: 0.7em;
+    text-transform: uppercase;
+}
+
+.stat_value_card{
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.color-normal{
+    color: rgb(115, 82, 89, 1);
+}
+
+.color-fighting{
+    color: rgb(150, 64, 42, 1);
+}
+
+.color-fire{
+    color: rgb(249, 109, 111, 1);
+}
+
+.color-grass{
+    color: rgb(126, 198, 197, 1);
+}
+
+.color-poison{
+    color: rgb(91, 49, 132, 1);
+}
+
+.color-ground{
+    color: rgb(101, 64, 8, 1);
+}
+
+.color-rock{
+    color: rgb(126, 126, 126, 1);
+}
+
+.color-bug{
+    color: rgb(98, 219, 96, 1);
+}
+
+.color-ghost{
+    color: rgb(50, 53, 105, 1);
+}
+
+.color-electric{
+    color: rgb(12, 19, 149, 1);
+}
+
+.color-water{
+    color: rgb(19, 50, 88, 1);
+}
+
+.color-psychic{
+    color: rgb(94, 115, 108, 1);
+}
+
+.color-ice{
+    color: rgb(4, 230, 255);
+}
+
+.color-dragon{
+    color: rgb(71, 138, 147, 1);
+}
+
+.color-dark{
+    color: rgb(3, 7, 6, 1);
+}
+
+.color-fairy{
+    color: rgb(151, 27, 69, 1);
+}
+
+.bg-normal{
+    background: rgb(115, 82, 89, 1);
+}
+
+.bg-fighting{
+    background: rgb(150, 64, 42, 1);
+}
+
+.bg-fire{
+    background: rgb(249, 109, 111, 1);
+}
+
+.bg-grass{
+    background: rgb(126, 198, 197, 1);
+}
+
+.bg-poison{
+    background: rgb(91, 49, 132, 1);
+}
+
+.bg-ground{
+    background: rgb(101, 64, 8, 1);
+}
+
+.bg-rock{
+    background: rgb(126, 126, 126, 1);
+}
+
+.bg-bug{
+    background: rgb(98, 219, 96, 1);
+}
+
+.bg-ghost{
+    background: rgb(50, 53, 105, 1);
+}
+
+.bg-electric{
+    background: rgb(12, 19, 149, 1);
+}
+
+.bg-water{
+    background: rgb(19, 50, 88, 1);
+}
+
+.bg-psychic{
+    background: rgb(94, 115, 108, 1);
+}
+
+.bg-ice{
+    background: rgb(4, 230, 255);
+}
+
+.bg-dragon{
+    background: rgb(71, 138, 147, 1);
+}
+
+.bg-dark{
+    background: rgb(3, 7, 6, 1);
+}
+
+.bg-fairy{
+    background: rgb(151, 27, 69, 1);
+}
+
+.border-normal{
+    border-color: rgb(115, 82, 89, 1);
+}
+
+.border-fighting{
+    border-color: rgb(150, 64, 42, 1);
+}
+
+.border-fire{
+    border-color: rgb(249, 109, 111, 1);
+}
+
+.border-grass{
+    border-color: rgb(126, 198, 197, 1);
+}
+
+.border-poison{
+    border-color: rgb(91, 49, 132, 1);
+}
+
+.border-ground{
+    border-color: rgb(101, 64, 8, 1);
+}
+
+.border-rock{
+    border-color: rgb(126, 126, 126, 1);
+}
+
+.border-bug{
+    border-color: rgb(98, 219, 96, 1);
+}
+
+.border-ghost{
+    border-color: rgb(50, 53, 105, 1);
+}
+
+.border-electric{
+    border-color: rgb(12, 19, 149, 1);
+}
+
+.border-water{
+    border-color: rgb(19, 50, 88, 1);
+}
+
+.border-psychic{
+    border-color: rgb(94, 115, 108, 1);
+}
+
+.border-ice{
+    border-color: rgb(4, 230, 255);
+}
+
+.border-dragon{
+    border-color: rgb(71, 138, 147, 1);
+}
+
+.border-dark{
+    border-color: rgb(3, 7, 6, 1);
+}
+
+.border-fairy{
+    border-color: rgb(151, 27, 69, 1);
+}
+
